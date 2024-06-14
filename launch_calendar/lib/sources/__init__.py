@@ -6,7 +6,7 @@ from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver import Chrome
 
-from lib.models import Source, Launch
+from launch_calendar.lib.models import Source, Launch
 
 logger = logging.getLogger('source')
 

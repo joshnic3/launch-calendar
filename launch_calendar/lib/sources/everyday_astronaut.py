@@ -6,8 +6,8 @@ import pytz
 from pydantic import field_validator, ValidationError
 from selenium.webdriver.common.by import By
 
-from lib.models import Launch
-from lib.sources import Scraper
+from launch_calendar.lib.models import Launch
+from launch_calendar.lib.sources import Scraper
 
 
 class EALaunch(Launch):

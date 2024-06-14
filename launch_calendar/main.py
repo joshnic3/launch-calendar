@@ -7,8 +7,8 @@ from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 
-from lib.api import scrape_launches, load_launch_calendar
-from lib.models import LaunchCalendarResponse, HTMLData
+from launch_calendar.lib.api import scrape_launches, load_launch_calendar
+from launch_calendar.lib.models import LaunchCalendarResponse, HTMLData
 
 logging.basicConfig(level=logging.DEBUG, stream=sys.stdout)
 logger = logging.getLogger('main')

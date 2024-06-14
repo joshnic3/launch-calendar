@@ -5,10 +5,10 @@ from datetime import datetime
 from pathlib import Path
 from typing import List, Optional
 
-from lib.models import Launch, LaunchCalendar
-from lib.sources.everyday_astronaut import EAScraper
-from lib.sources.nasa_space_flight import NSFScraper
-from lib.sources.what_about_it import WAIScraper
+from launch_calendar.lib.models import Launch, LaunchCalendar
+from launch_calendar.lib.sources.everyday_astronaut import EAScraper
+from launch_calendar.lib.sources.nasa_space_flight import NSFScraper
+from launch_calendar.lib.sources.what_about_it import WAIScraper
 
 SAVE_DIR = Path('/Users/joshnicholls/Documents/Projects/starship')
 SOURCES = [NSFScraper(), EAScraper(), WAIScraper()]
