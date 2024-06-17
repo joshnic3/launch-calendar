@@ -11,7 +11,8 @@ from launch_calendar.lib.sources.nasa_space_flight import NSFScraper
 from launch_calendar.lib.sources.what_about_it import WAIScraper
 
 SAVE_DIR = Path('/Users/joshnicholls/Documents/Projects/starship')
-SOURCES = [NSFScraper(), EAScraper(), WAIScraper()]
+# SOURCES = [NSFScraper(), EAScraper(), WAIScraper()]
+SOURCES = [NSFScraper()]
 
 
 logger = logging.getLogger('launches')

@@ -15,7 +15,6 @@ logger = logging.getLogger('main')
 
 file_name = 'launch_calendar_data.json'
 calendar = load_launch_calendar(file_name)
-
 app = FastAPI()
 templates = Jinja2Templates(directory="templates")
 app.mount("/static", StaticFiles(directory="static"), name="static")

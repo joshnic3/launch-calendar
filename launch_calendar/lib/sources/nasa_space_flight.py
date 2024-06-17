@@ -1,3 +1,4 @@
+import time
 from datetime import datetime
 from typing import List
 
@@ -29,6 +30,7 @@ class NSFScraper(Scraper):
 
     def _get_launches(self) -> List[Launch]:
         driver = self._get()
+        time.sleep(5)
         schedule = driver.find_elements(By.CLASS_NAME, "launch-schedule__card")
         launches = []
         for launch in schedule:
